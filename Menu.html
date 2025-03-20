@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b67e368fa6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <title>Warung Makan Berkah</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="image/warr-removebg-preview.png" alt="Logo Restoran Lezat">
+                <h1 class="site-title">Warung Makan Berkah</h1>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                &#9776;
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="#" onclick="showMenu('food')">Makanan</a></li>
+                <li><a href="#" onclick="showMenu('drinks')">Minuman</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main">
+        <!-- Daftar Makanan -->
+        <div class="content" id="foodList">
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="image/rawon.jpg" alt="Rawon">
+                    <h3>Rawon</h3>
+                    <p>Rp 30.000</p>
+                </div>
+                <div class="menu-item">
+                    <img src="image/sotobetawi.jpg" alt="Soto Betawi">
+                    <h3>Soto Betawi</h3>
+                    <p>Rp 45.000</p>
+                </div>
+                <div class="menu-item">
+                    <img src="image/kerupuk_putih.jpg" alt="Krupuk">
+                    <h3>Krupuk</h3>
+                    <p>Rp 2.000</p>
+                </div>
+                <div class="menu-item">
+                    <img src="image/mie goreng.jpg" alt="Mie Goreng">
+                    <h3>Mie Goreng</h3>
+                    <p>Rp 15.000</p>
+                </div>
+                <div class="menu-item">
+                    <img src="image/bakso.jpg" alt="Bakso">
+                    <h3>Bakso</h3>
+                    <p>Rp 18.000</p>
+                </div>
+                <div class="menu-item">
+                    <img src="image/nasi.jpg" alt="Nasi Putih">
+                    <h3>Nasi Putih</h3>
+                    <p>Rp 5.000</p>
+                </div>
+                <div class="menu-item">
+                    <img src="image/ayam bakar.jpg" alt="Ayam Bakar">
+                    <h3>Ayam Bakar</h3>
+                    <p>Rp 9.000</p>
+                </div>
+                <div class="menu-item">
+                    <img src="image/telor_asin.jpg" alt="Telor Asin">
+                    <h3>Telor Asin</h3>
+                    <p>Rp 3.000</p>
+                </div>
+                <div class="menu-item">
+                    <img src="image/nasi goreng.jpg" alt="Nasi Goreng">
+                    <h3>Nasi Goreng</h3>
+                    <p>Rp 15.000</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Daftar Minuman -->
+        <div class="content" id="drinkList" style="display:none;">
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="image/es teh.webp" alt="Es Teh Manis">
+                    <h3>Es Teh Manis</h3>
+                    <p>Rp 5.000</p>
+                </div>
+                <div class="menu-item">
+                    <img src="image/jus jambu.jpg" alt="Jus Jambu">
+                    <h3>Jus Jambu</h3>
+                    <p>Rp 10.000</p>
+                </div>
+                <div class="menu-item">
+                    <img src="image/jus jeruk.jpg" alt="Jus Jeruk">
+                    <h3>Jus Jeruk</h3>
+                    <p>Rp 10.000</p>
+                </div>
+                <div class="menu-item">
+                    <img src="image/aqua.avif" alt="Aqua">
+                    <h3>Aqua</h3>
+                    <p>Rp 5.000</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>
