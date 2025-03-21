@@ -715,7 +715,7 @@ button {
   font-weight: bold;
   color: #008000;
   margin-bottom: 10px;
-  text-align: center; /* Pastikan teks berada di tengah */
+  text-align: center;
   display: flex;
   justify-content: center;
 }
@@ -736,7 +736,7 @@ button {
   font-weight: bold;
 }
 .hero-bannerbb {
-  background: url('image/mie\ goreng.jpg') no-repeat center center/cover;
+  background: url('image/kangkung.jpg') no-repeat center center/cover;
   height: 50vh;
   display: flex;
   align-items: center;
@@ -754,21 +754,45 @@ button {
 }
 
 .feature {
-  text-align: center;
-  color: #005f23;
-  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
 }
+
 
 .feature i {
   color: red;
   font-size: 24px;
+  align-items: center;
 }
 @media (max-width: 768px) {
   .container {
-    flex-direction: column; /* Mengubah tampilan jadi vertikal */
+    flex-direction: column;
     align-items: center;
     gap: 30px;
-    padding: 50px 20px; /* Mengurangi padding */
+    padding: 50px 20px;
   }
 }
- 
+.flex-col {
+  flex-direction: column;
+  background-color: rgb(60, 174, 60);
+    padding: 50px 0;
+}
+
+.reservation-form {
+  width: 80%;
+  
+}
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: -27px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: white;
+  margin-top: 3px;
+}

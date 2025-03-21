@@ -58,3 +58,20 @@ function handleSubmit(event) {
 
     return false;
 }
+function redirectWA() {
+    let nomorWA = "6281908803875"; // Nomor WhatsApp
+
+    let tanggal = document.getElementById("date").value;
+    let jam = document.getElementById("time").value;
+    let dewasa = document.getElementById("adults").value;
+    let anak = document.getElementById("children").value;
+
+    if (!tanggal || !jam || !dewasa || !anak) {
+        alert("Mohon isi semua data terlebih dahulu.");
+        return;
+    }
+    let pesan = `Halo, saya ingin reservasi:%0A📅 Tanggal: ${tanggal}%0A⏰ Jam: ${jam}%0A👨 Dewasa: ${dewasa} orang%0A👶 Anak: ${anak} orang%0A Mohon konfirmasi, terima kasih!`;
+    let linkWA = `https://api.whatsapp.com/send/?phone=${nomorWA}&text=${pesan}&type=phone_number&app_absent=0`;
+    
+    window.open(linkWA, "_blank");
+}
