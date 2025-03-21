@@ -70,7 +70,7 @@ function redirectWA() {
         alert("Mohon isi semua data terlebih dahulu.");
         return;
     }
-    let pesan = `Halo, saya ingin reservasi:%0A📅 Tanggal: ${tanggal}%0A⏰ Jam: ${jam}%0A👨 Dewasa: ${dewasa} orang%0A👶 Anak: ${anak} orang%0A Mohon konfirmasi, terima kasih!`;
+    let pesan = `Halo, saya ingin reservasi:%0A📅 Tanggal: ${tanggal}%0A⏰ Jam: ${jam}%0A👨 Dewasa: ${dewasa} orang%0A👶 Anak: ${anak} orang%0A Terima kasih!`;
     let linkWA = `https://api.whatsapp.com/send/?phone=${nomorWA}&text=${pesan}&type=phone_number&app_absent=0`;
     
     window.open(linkWA, "_blank");

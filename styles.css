@@ -796,3 +796,6 @@ button {
   color: white;
   margin-top: 3px;
 }
+h1, p {
+  text-align: center;
+}
