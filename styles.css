@@ -745,3 +745,30 @@ button {
   text-align: center;
   position: relative;
 }
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 100px;
+}
+
+.feature {
+  text-align: center;
+  color: #005f23;
+  font-size: 18px;
+}
+
+.feature i {
+  color: red;
+  font-size: 24px;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Mengubah tampilan jadi vertikal */
+    align-items: center;
+    gap: 30px;
+    padding: 50px 20px; /* Mengurangi padding */
+  }
+}
+ 
