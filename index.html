@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warung Makan Berkah</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">
+            <img src="image/logo.png" alt="Logo Restoran Lezat">
+            <h1 class="site-title">Warung Makan Berkah</h1>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            &#9776;
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+            <li><a href="kontak.html">Hubungi Kami</a></li>
+        </ul>
+    </nav>
+</header>
+</body>
+</html>
+
+
+<section id="home" class="hero-banner">
+    <div class="hero-content">
+        <h1>Selamat Datang di Warung Makan Berkah</h1>
+        <p>Nikmati hidangan lezat dan menggugah selera di restoran kami</p>
+    </div>
+</section>
+<section class="hero">
+    <div class="hero-content">
+        <h1>Lagi Lapar Tapi Bingung Mau Makan Apa?</h1>
+        <p><strong>Warung Makan Berkah</strong> siap memanjakan lidahmu dengan hidangan lezat khas Indonesia! Kami menggunakan bahan-bahan berkualitas dan resep terbaik agar setiap suapan terasa spesial. Dengan suasana yang nyaman dan pelayanan yang ramah, di sini bukan cuma soal makan tapi juga menikmati momen kebersamaan yang hangat. Yuk, cobain sendiri kelezatannya!</p>
+    </div>
+</section>
+<section class="hero-bannerbb">
+    <div class="hero-content">
+        <h1>Kenikmatan Asli yang Terjaga</h1>
+        <p>Menghadirkan kepuasaan melalui rasa alami, tanpa perlu tambahan penguat rasa buatan</p>
+    </div>
+</section>
+<div class="container">
+    <div class="feature">
+        <i class="fa-solid fa-circle-check"></i>
+        <p><strong>Fasilitas Kumpul</strong><br>Keluarga yang Asik</p>
+    </div>
+    <div class="feature">
+        <i class="fa-solid fa-circle-check"></i>
+        <p><strong>Nuansa Berbudaya</strong><br>yang Sejuk dan Asri</p>
+    </div>
+    <div class="feature">
+        <i class="fa-solid fa-circle-check"></i>
+        <p><strong>Tempat Satu</strong><br>Kebersamaan</p>
+    </div>
+    <div class="feature">
+        <i class="fa-solid fa-circle-check"></i>
+        <p><strong>Makanan Fresh</strong><br>Tanpa Penguat Rasa</p>
+    </div>
+</div>
+<div class="container flex-col">
+    <h1 class="title">Reservasi Sekarang!</h1>
+    <p class="subtitle">Reservasi Mudah dan Cepat: Segera Dapatkan Tempat Anda di Restoran Kami</p>
+    <form class="reservation-form" onsubmit="redirectWA(); return false;">
+    <form class="reservation-form">
+        <label for="date">Tanggal</label>
+        <input type="date" id="date">
+
+        <label for="time">Jam</label>
+        <input type="time" id="time">
+
+        <label for="adults">Dewasa</label>
+        <input type="number" id="adults" placeholder="Jumlah Dewasa" min="0">
+
+        <label for="children">Anak</label>
+        <input type="number" id="children" placeholder="Jumlah Anak" min="0">
+
+        <button type="submit">Reservasi Sekarang</button>
+    </form>
+</div>
+<section class="product"> 
+    <h2 class="product-category">Terlaris</h2>
+    <button class="pre-btn"><img src="image/arrow.png" alt=""></button>
+    <button class="nxt-btn"><img src="image/arrow.png" alt=""></button>
+    <div class="product-container">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="image/ayam bakar.jpg" class="product-thumb" alt="">
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">Ayam Bakar</h2>
+                <!-- Star Rating Container -->
+                <h3 class="food-rating">
+                    <span>4.0</span>
+                </h3>
+                <div class="star-rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <img src="image/nasi goreng.jpg" class="product-thumb" alt="">
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">Nasi Goreng</h2>
+                <!-- Star Rating Container -->
+                <h3 class="food-rating">
+                    <span>5.0</span>
+                </h3>
+                <div class="star-rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <img src="image/sotobetawi.jpg" class="product-thumb" alt="">
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">Soto Betawi</h2>
+                <h3 class="food-rating">
+                    <span>4.0</span>
+                </h3>
+                <!-- Star Rating Container -->
+                <div class="star-rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <img src="image/rawon.jpg" class="product-thumb" alt="">
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">Rawon</h2>
+                <h3 class="food-rating">
+                    <span>4.0</span>
+                </h3>
+                <!-- Star Rating Container -->
+                <div class="star-rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                </div>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <img src="image/mie goreng.jpg" class="product-thumb" alt="">
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">Mie Goreng</h2>
+                <h3 class="food-rating">
+                    <span>5.0</span>
+                </h3>
+                <!-- Star Rating Container -->
+                <div class="star-rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script2.js"></script>
+</body>
+</html>
